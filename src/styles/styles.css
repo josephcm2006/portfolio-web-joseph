@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #2D2D3B;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Outfit, Arial, Helvetica, sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -91,6 +91,32 @@ body {
     max-width: 1200px;
     box-sizing: border-box;
     z-index: 10;
+}
+
+#pagina_web_acerca{
+    width: 90%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.acerca-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.parrafo_acerca {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: clamp(16px, 1.1vw, 18px);
+    line-height: 1.8;
+    margin: 0;
+    text-align: justify;
 }
 
 .titulo_de_proyectos{
@@ -322,3 +348,51 @@ body {
     }
 }
 
+/* Animación reutilizable para carga de textos */
+.fade-in-animation {
+    animation: slideInDown 0.8s ease-out forwards;
+}
+
+@keyframes slideInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animación para Joseph Coello */
+.nombre-animado {
+    animation: glow-pulse 2s ease-in-out infinite;
+    text-shadow: 0 0 10px rgba(251, 240, 91, 0.5);
+}
+
+@keyframes glow-pulse {
+    0%, 100% {
+        text-shadow: 0 0 10px rgba(251, 240, 91, 0.5), 0 0 20px rgba(251, 240, 91, 0.3);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(251, 240, 91, 0.8), 0 0 40px rgba(251, 240, 91, 0.6);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fade-in-animation {
+        animation: none;
+        transform: none;
+    }
+    
+    .nombre-animado {
+        animation: none;
+        text-shadow: 0 0 10px rgba(251, 240, 91, 0.5);
+        transform: none;
+    }
+}
+/* Animación para Contáctame */
+.contactame-animado {
+    animation: slideInDown 0.8s ease-out;
+    position: relative;
+}
