@@ -1,11 +1,207 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import GithubButton from "../components/GithubButton.astro";
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Portfolio">
+  <header class="sticky-main">
+    <div id="header">
+      <button class="boton_diseño_1">
+        <span class="">About me</span>
+      </button>
+    </div>
+  </header>
+
+  <div id="circulo_color1" class="circulo"></div>
+  <div id="circulo_color2" class="circulo"></div>
+
+  <div id="estructura_web">
+    <div id="pagina_web">
+      <h1 class="titulo_principal">
+        ¡Hola!, soy <span class="texto_amarillo">Joseph Coello</span>
+      </h1>
+      <h2 class="subtitulo_principal">Ingeniero de Software Fullstack</h2>
+      <div class="logos-container">
+        <img
+          class="logo_tecnologia_icono"
+          src="/assets/icons/django-icon-svgrepo-com.svg"
+          alt="Django"
+        /> 
+        <img
+          class="logo_tecnologia_icono"
+          id="logo_astro"
+          src="/assets/icons/astro-svgrepo-com.svg"
+          alt="Astro"
+        />
+        <img
+          class="logo_tecnologia_icono"
+          src="/assets/icons/mongodb-svgrepo-com.svg"
+          alt="MongoDB"
+        />
+        <img
+          class="logo_tecnologia_icono"
+          src="/assets/icons/git-svgrepo-com.svg"
+          alt="Git"
+        />
+        <img
+          class="logo_tecnologia_icono"
+          src="/assets/icons/python-svgrepo-com.svg"
+          alt="Git"
+        />
+        <img
+          class="logo_tecnologia_icono"
+          src="/assets/icons/js-svgrepo-com.svg"
+          alt="Git"
+          />
+        <img
+          class="logo_tecnologia_icono"
+          src="/assets/icons/html-5-svgrepo-com.svg"
+          alt="Git"
+        />
+        <img
+          class="logo_tecnologia_icono"
+          src="/assets/icons/css3-svgrepo-com.svg"
+          alt="Git"
+        />
+      </div>
+
+      <p class="parrafo_principal">
+        Desde muy pequeño supe que la programación era lo que más me apasionaba,
+        me encanta obtener las mejores soluciones para los retos que se ponen en
+        mi camino, mientras aprendo con el paso de los días para convertirme en
+        un gran desarrollador.
+      </p>
+    </div>
+
+    <div id="pagina_web_proyectos">
+      <h2 class="titulo_de_proyectos">Mis Proyectos</h2>
+      <div class="proyectos-container">
+        <!-- Proyecto 1 -->
+        <div class="proyecto-card" style="animation-delay: 0.1s;">
+          <div class="proyecto-imagen">
+            <img src="/assets/proyecto1.jpg" alt="Proyecto 1" />
+          </div>
+          <div class="proyecto-contenido">
+            <h3>Boletería Express | Equipo</h3>
+            <p>
+              Un sistema de boletería creado en Python, permite la selección de boletos de autobuses de forma gráfica. Con mi equipo hemos utilizado las mejores librerías para realizar este proyecto.
+            </p>
+            <div class="proyecto-tecnologias">
+              <span class="tech-tag">Python</span>
+            </div>
+            <div class="proyecto-links">
+              <!-- 🔗 COLOCAR URL DE GITHUB AQUÍ: https://github.com/tuUsuario/boleteria-express -->
+              <GithubButton href="https://github.com/josephcm2006/Boleter-a-.git" label="GitHub" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="proyecto-card" style="animation-delay: 0.3s;">
+          <div class="proyecto-imagen">
+            <img src="/assets/proyecto2.jpg" alt="Proyecto 2" />
+          </div>
+          <div class="proyecto-contenido">
+            <h3>Servidor proxy inverso | Equipo</h3>
+            <p>
+              Un servidor proxy inverso que permite levantar una página web de clicks por segundo, los récords se guardan en una base de datos, se hizo utilizando el sistema operativo Rocky linux.
+            </p>
+            <div class="proyecto-tecnologias">
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">Javascript</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Node.js</span>
+            </div>
+            <div class="proyecto-links">
+              <!-- 🔗 COLOCAR URL DE GITHUB AQUÍ: https://github.com/tuUsuario/servidor-proxy-inverso -->
+              <GithubButton href="https://github.com/josephcm2006/P-gina-ser-Servidor-Proxy-Inverso---CPS.git" label="GitHub" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div class="proyecto-card" style="animation-delay: 0.5s;">
+          <div class="proyecto-imagen">
+            <img src="/assets/proyecto3.jpg" alt="Proyecto 3" />
+          </div>
+          <div class="proyecto-contenido">
+            <h3>Portfolio Web | Solitario</h3>
+            <p>
+              El portfolio que estás viendo en estos momentos :), mi presentación como ingeniero de software que aún está en un largo aprendizaje.
+            </p>
+            <div class="proyecto-tecnologias">
+              <span class="tech-tag">Astro</span>
+              <span class="tech-tag">Javascript</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">HTML</span>
+            </div>
+            <div class="proyecto-links">
+              <!-- 🔗 COLOCAR URL DE GITHUB AQUÍ: https://github.com/tuUsuario/portfolio-web -->
+              <GithubButton href="https://github.com/tuUsuario/portfolio-web" label="GitHub" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="pagina_web_contacto">
+      <h2 class="titulo_de_proyectos">Contáctame</h2>
+      <div class="contacto-container">
+        <p class="parrafo_contacto">¿Tienes una idea o un proyecto en mente? Me encantaría escucharte. Déjame un mensaje y te responderé lo antes posible.</p>
+        
+        <form class="formulario-contacto" id="contactForm" action="https://formspree.io/f/xgoveyek" method="POST">
+          <div class="grupo-formulario">
+            <input type="text" name="nombre" placeholder="Tu nombre" required class="input-contacto" />
+          </div>
+          
+          <div class="grupo-formulario">
+            <input type="email" name="email" placeholder="Tu correo electrónico" required class="input-contacto" />
+          </div>
+          
+          <div class="grupo-formulario">
+            <textarea name="mensaje" placeholder="Tu mensaje" rows="5" required class="input-contacto"></textarea>
+          </div>
+          
+          <button type="submit" class="boton_enviar">Enviar Mensaje</button>
+        </form>
+
+        <div id="mensajeExito" class="mensaje-exito" style="display: none;">
+          <p>¡Gracias por tu mensaje! Me pondré en contacto contigo pronto.</p>
+        </div>
+
+        <script>
+          const form = document.getElementById('contactForm');
+          const mensajeExito = document.getElementById('mensajeExito');
+
+          form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            try {
+              await fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: {
+                  'Accept': 'application/json'
+                }
+              });
+
+              form.style.display = 'none';
+              mensajeExito.style.display = 'block';
+            } catch (error) {
+              console.error('Error:', error);
+            }
+          });
+        </script>
+
+        <div class="redes-contacto">
+          <h3 class="subtitulo_contacto">¡Espero trabajar contigo!, no olvides contactarme.</h3>
+          <div class="enlaces-redes">
+            <a href="#" class="enlace-red">LinkedIn</a>
+            <a href="#" class="enlace-red">GitHub</a>
+            <a href="#" class="enlace-red">Email</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </Layout>
