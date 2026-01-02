@@ -6,9 +6,20 @@ import GithubButton from "../components/GithubButton.astro";
 <Layout title="Portfolio">
   <header class="sticky-main">
     <div id="header">
-      <button class="boton_diseño_1">
-        <span class="">About me</span>
-      </button>
+      <nav class="nav-botones">
+        <button class="boton_diseño_1 nav-btn" data-section="pagina_web">
+          <span>Inicio</span>
+        </button>
+        <button class="boton_diseño_1 nav-btn" data-section="pagina_web_proyectos">
+          <span>Proyectos</span>
+        </button>
+        <button class="boton_diseño_1 nav-btn" data-section="pagina_web_acerca">
+          <span>Acerca de mí</span>
+        </button>
+        <button class="boton_diseño_1 nav-btn" data-section="pagina_web_contacto">
+          <span>Contáctame</span>
+        </button>
+      </nav>
     </div>
   </header>
 
@@ -233,6 +244,24 @@ import GithubButton from "../components/GithubButton.astro";
 </Layout>
 
 <script is:inline>
+  // Navegación suave entre secciones
+  const navBtns = document.querySelectorAll('.nav-btn');
+  
+  navBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const sectionId = btn.getAttribute('data-section');
+      const section = document.getElementById(sectionId);
+      
+      if (section) {
+        section.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+
+  // Formulario de contacto
   const form = document.getElementById("contactForm");
   const mensajeExito = document.getElementById("mensajeExito");
 
