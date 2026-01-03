@@ -343,13 +343,11 @@ import GithubButton from "../components/GithubButton.astro";
     copiarEmailBtn.addEventListener("click", () => {
       navigator.clipboard.writeText(emailText.textContent);
     
-      // Crear mensaje de copiado
       const mensaje = document.createElement("span");
       mensaje.className = "mensaje-copiado";
       mensaje.textContent = "¡Copiado!";
       copiarEmailBtn.appendChild(mensaje);
     
-    // Eliminar mensaje después de 2 segundos
       setTimeout(() => {
         mensaje.remove();
       }, 2000);
