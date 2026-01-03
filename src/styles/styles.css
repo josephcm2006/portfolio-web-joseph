@@ -431,20 +431,20 @@ html {
 
 /* Estilos para el header y navegación */
 .sticky-main {
-    position: fixed; /* Cambiado de sticky a fixed */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 100;
-    background-color: transparent; /* Más transparente para ver el fondo */
+    background-color: transparent;
     backdrop-filter: blur(5px);
-    padding: 1rem 0; /* Reducido de 1.5rem */
+    padding: 1rem 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .nav-botones {
     display: flex;
-    gap: 1.5rem; /* Reducido de 2rem */
+    gap: 1.5rem;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -456,12 +456,12 @@ html {
     transition: all 0.3s ease;
     transform: translateY(0);
     position: relative !important;
-    padding: 8px 20px; /* Botones más pequeños */
-    font-size: 14px; /* Texto más pequeño */
+    padding: 8px 20px;
+    font-size: 14px;
 }
 
 .nav-btn span {
-    font-size: 14px; /* Texto más pequeño */
+    font-size: 14px;
 }
 
 .nav-btn:hover {
@@ -471,22 +471,6 @@ html {
 
 .nav-btn:active {
     transform: translateY(0);
-}
-
-@media (max-width: 768px) {
-    .nav-botones {
-        gap: 1rem;
-        padding: 0 1rem;
-    }
-    
-    .nav-btn span {
-        font-size: 0.85rem;
-    }
-    
-    .nav-btn {
-        min-width: 90px;
-        padding: 8px 12px !important;
-    }
 }
 
 /* Estilos para foto de perfil y layout hero */
@@ -506,7 +490,6 @@ html {
 .foto-perfil {
     width: 370px;
     height: 370px;
-    border-radius: 0;
     object-fit: cover;
     object-position: center 90%;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
@@ -521,30 +504,6 @@ html {
 
 .texto-hero {
     flex: 1;
-}
-
-/* Responsive para hero layout */
-@media (max-width: 968px) {
-    .hero-layout {
-        flex-direction: column;
-        text-align: center;
-        gap: 30px;
-    }
-    
-    .foto-perfil {
-        width: 180px;
-        height: 180px;
-    }
-    
-    .titulo_principal,
-    .subtitulo_principal,
-    .parrafo_principal {
-        text-align: center;
-    }
-    
-    .logos-container {
-        justify-content: center;
-    }
 }
 
 /* Footer */
@@ -645,4 +604,160 @@ html {
     color: rgba(255, 255, 255, 0.5);
     font-size: 14px;
     margin: 0;
+}
+
+/* ===== ESTILOS RESPONSIVOS PARA MÓVILES ===== */
+
+/* Tablets y dispositivos medianos (hasta 968px) */
+@media (max-width: 968px) {
+    .hero-layout {
+        flex-direction: column !important;
+        text-align: center;
+        gap: 30px;
+        align-items: center !important;
+    }
+    
+    .foto-perfil {
+        width: 200px !important;
+        height: 200px !important;
+        margin: 0 auto;
+    }
+    
+    .foto-perfil-container {
+        margin-top: 0 !important;
+    }
+    
+    .titulo_principal,
+    .subtitulo_principal,
+    .parrafo_principal {
+        text-align: center !important;
+    }
+    
+    .parrafo_principal {
+        max-width: 100%;
+    }
+    
+    .logos-container {
+        justify-content: center;
+    }
+}
+
+/* Móviles (hasta 768px) */
+@media (max-width: 768px) {
+    #circulo_color1,
+    #circulo_color2 {
+        width: 200px !important;
+        height: 200px !important;
+    }
+    
+    .sticky-main {
+        padding: 0.75rem 0;
+    }
+    
+    .nav-botones {
+        gap: 0.8rem;
+        padding: 0 1rem;
+    }
+    
+    .nav-btn {
+        min-width: 80px;
+        padding: 6px 12px !important;
+        font-size: 12px !important;
+    }
+    
+    .nav-btn span {
+        font-size: 12px !important;
+    }
+    
+    .contenido-inicio {
+        padding: 80px 15px 20px;
+    }
+    
+    .titulo_principal {
+        font-size: clamp(32px, 8vw, 50px) !important;
+        margin-bottom: 0.5rem;
+    }
+    
+    .subtitulo_principal {
+        font-size: clamp(18px, 5vw, 28px) !important;
+    }
+    
+    .parrafo_principal {
+        font-size: clamp(14px, 4vw, 16px) !important;
+    }
+    
+    .foto-perfil {
+        width: 180px !important;
+        height: 180px !important;
+    }
+    
+    .logo_tecnologia_icono {
+        height: 28px !important;
+        width: 28px !important;
+    }
+    
+    .logos-container {
+        gap: 12px;
+    }
+    
+    #pagina_web_proyectos,
+    #pagina_web_acerca,
+    #pagina_web_contacto {
+        width: 95%;
+    }
+    
+    .titulo_de_proyectos {
+        font-size: 28px !important;
+        margin: 60px auto 30px auto;
+    }
+    
+    .acerca-container {
+        padding: 25px;
+    }
+    
+ 
+
+    #emailText {
+        font-size: 14px;
+        word-break: break-all;
+    }
+    
+    .enlaces-redes {
+        flex-direction: column;
+        width: 85%;
+        align-items: center
+    }
+    
+    .enlace-red {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+    .nav-botones {
+        gap: 0.5rem;
+        padding: 0 0.5rem;
+    }
+    
+    .nav-btn {
+        min-width: 70px;
+        padding: 5px 10px !important;
+        font-size: 11px !important;
+    }
+    
+    .nav-btn span {
+        font-size: 11px !important;
+    }
+    
+    .foto-perfil {
+        width: 150px !important;
+        height: 150px !important;
+    }
+    
+    .logo_tecnologia_icono {
+        height: 24px !important;
+        width: 24px !important;
+    }
 }
