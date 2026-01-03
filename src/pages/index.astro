@@ -10,13 +10,19 @@ import GithubButton from "../components/GithubButton.astro";
         <button class="boton_diseño_1 nav-btn" data-section="pagina_web">
           <span>Inicio</span>
         </button>
-        <button class="boton_diseño_1 nav-btn" data-section="pagina_web_proyectos">
+        <button
+          class="boton_diseño_1 nav-btn"
+          data-section="pagina_web_proyectos"
+        >
           <span>Proyectos</span>
         </button>
         <button class="boton_diseño_1 nav-btn" data-section="pagina_web_acerca">
           <span>Acerca de mí</span>
         </button>
-        <button class="boton_diseño_1 nav-btn" data-section="pagina_web_contacto">
+        <button
+          class="boton_diseño_1 nav-btn"
+          data-section="pagina_web_contacto"
+        >
           <span>Contáctame</span>
         </button>
       </nav>
@@ -28,60 +34,87 @@ import GithubButton from "../components/GithubButton.astro";
 
   <div id="estructura_web">
     <div id="pagina_web">
-      <h1 class="titulo_principal fade-in-animation">
-        ¡Hola!, soy <span class="texto_amarillo nombre-animado">Joseph Coello</span>
-      </h1>
-      <h2 class="subtitulo_principal fade-in-animation">Ingeniero de Software Fullstack</h2>
-      <div class="logos-container">
-        <img
-          class="logo_tecnologia_icono fade-in-animation"
-          src="/assets/icons/django-icon-svgrepo-com.svg"
-          alt="Django"
-        />
-        <img
-          class="logo_tecnologia_icono fade-in-animation"
-          id="logo_astro"
-          src="/assets/icons/astro-svgrepo-com.svg"
-          alt="Astro"
-        />
-        <img
-          class="logo_tecnologia_icono fade-in-animation"
-          src="/assets/icons/mongodb-svgrepo-com.svg"
-          alt="MongoDB"
-        />
-        <img
-          class="logo_tecnologia_icono fade-in-animation"
-          src="/assets/icons/git-svgrepo-com.svg"
-          alt="Git"
-        />
-        <img
-          class="logo_tecnologia_icono fade-in-animation"
-          src="/assets/icons/python-svgrepo-com.svg"
-          alt="Git"
-        />
-        <img
-          class="logo_tecnologia_icono fade-in-animation"
-          src="/assets/icons/js-svgrepo-com.svg"
-          alt="Git"
-        />
-        <img
-          class="logo_tecnologia_icono fade-in-animation"
-          src="/assets/icons/html-5-svgrepo-com.svg"
-          alt="Git"
-        />
-        <img
-          class="logo_tecnologia_icono fade-in-animation"
-          src="/assets/icons/css3-svgrepo-com.svg"
-          alt="Git"
-        />
-      </div>
+      <img
+        src="/assets/backgrounds/fondoinicio.png"
+        alt="FONDOINICIO"
+        class="fondo-inicio"
+      />
 
-      <p class="parrafo_principal fade-in-animation">
-        Desde muy pequeño supe que la programación era lo que más me apasionaba,
-        me encanta obtener las mejores soluciones para los retos que se ponen en
-        mi camino, mientras aprendo con el paso de los días para convertirme en
-        un gran desarrollador.
-      </p>
+      <div class="contenido-inicio">
+        <div class="hero-layout">
+          <!-- FOTO DE PERFIL -->
+          <div class="foto-perfil-container">
+            <img
+              src="/assets/icons/fotopersonal.png"
+              alt="Joseph Coello"
+              class="foto-perfil"
+            />
+          </div>
+
+          <!-- CONTENIDO DE TEXTO -->
+          <div class="texto-hero">
+            <h1 class="titulo_principal fade-in-animation">
+              ¡Hola!, soy <span class="texto_amarillo nombre-animado"
+                >Joseph Coello</span
+              >
+            </h1>
+            <h2 class="subtitulo_principal fade-in-animation">
+              Ingeniero de Software Fullstack
+            </h2>
+
+            <div class="logos-container">
+              <img
+                class="logo_tecnologia_icono fade-in-animation"
+                src="/assets/icons/django-icon-svgrepo-com.svg"
+                alt="Django"
+              />
+              <img
+                class="logo_tecnologia_icono fade-in-animation"
+                id="logo_astro"
+                src="/assets/icons/astro-svgrepo-com.svg"
+                alt="Astro"
+              />
+              <img
+                class="logo_tecnologia_icono fade-in-animation"
+                src="/assets/icons/mongodb-svgrepo-com.svg"
+                alt="MongoDB"
+              />
+              <img
+                class="logo_tecnologia_icono fade-in-animation"
+                src="/assets/icons/git-svgrepo-com.svg"
+                alt="Git"
+              />
+              <img
+                class="logo_tecnologia_icono fade-in-animation"
+                src="/assets/icons/python-svgrepo-com.svg"
+                alt="Python"
+              />
+              <img
+                class="logo_tecnologia_icono fade-in-animation"
+                src="/assets/icons/js-svgrepo-com.svg"
+                alt="JavaScript"
+              />
+              <img
+                class="logo_tecnologia_icono fade-in-animation"
+                src="/assets/icons/html-5-svgrepo-com.svg"
+                alt="HTML5"
+              />
+              <img
+                class="logo_tecnologia_icono fade-in-animation"
+                src="/assets/icons/css3-svgrepo-com.svg"
+                alt="CSS3"
+              />
+            </div>
+
+            <p class="parrafo_principal fade-in-animation">
+              Desde muy pequeño supe que la programación era lo que más me
+              apasionaba, me encanta obtener las mejores soluciones para los
+              retos que se ponen en mi camino, mientras aprendo con el paso de
+              los días para convertirme en un gran desarrollador.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="pagina_web_proyectos">
@@ -90,7 +123,7 @@ import GithubButton from "../components/GithubButton.astro";
         <!-- Proyecto 1 -->
         <div class="proyecto-card" style="animation-delay: 0.1s;">
           <div class="proyecto-imagen">
-            <img src="/assets/proyecto1.jpg" alt="Proyecto 1" />
+            <img src="/assets/backgrounds/proyecto1.png" alt="Proyecto 1" />
           </div>
           <div class="proyecto-contenido">
             <h3>Boletería Express | Equipo</h3>
@@ -114,7 +147,7 @@ import GithubButton from "../components/GithubButton.astro";
         <!-- Proyecto 2 -->
         <div class="proyecto-card" style="animation-delay: 0.3s;">
           <div class="proyecto-imagen">
-            <img src="/assets/proyecto2.jpg" alt="Proyecto 2" />
+            <img src="/assets/backgrounds/proyecto2.png" alt="Proyecto 2" />
           </div>
           <div class="proyecto-contenido">
             <h3>Servidor proxy inverso | Equipo</h3>
@@ -141,7 +174,7 @@ import GithubButton from "../components/GithubButton.astro";
         <!-- Proyecto 3 -->
         <div class="proyecto-card" style="animation-delay: 0.5s;">
           <div class="proyecto-imagen">
-            <img src="/assets/proyecto3.jpg" alt="Proyecto 3" />
+            <img src="/assets/backgrounds/proyecto3.png" alt="Proyecto 3" />
           </div>
           <div class="proyecto-contenido">
             <h3>Portfolio Web | Solitario</h3>
@@ -171,8 +204,11 @@ import GithubButton from "../components/GithubButton.astro";
       <h2 class="titulo_de_proyectos fade-in-animation">Acerca de mí</h2>
       <div class="acerca-container">
         <p class="parrafo_acerca fade-in-animation">
-
-          Soy un estudiante de ingeniería de software que está cada vez más motivado por entrar en el desarrollo web. Estudio en la Universidad Laica de Eloy Alfaro de Manabí, en Ecuador, Manta. Poco a poco me siento más adentrado en la industria web y todos los días trato de aprender algo nuevo para usar en mis proyectos.
+          Soy un estudiante de ingeniería de software que está cada vez más
+          motivado por entrar en el desarrollo web. Estudio en la Universidad
+          Laica de Eloy Alfaro de Manabí, en Ecuador, Manta. Poco a poco me
+          siento más adentrado en la industria web y todos los días trato de
+          aprender algo nuevo para usar en mis proyectos.
         </p>
       </div>
     </div>
@@ -217,8 +253,7 @@ import GithubButton from "../components/GithubButton.astro";
               placeholder="Tu mensaje"
               rows="5"
               required
-              class="input-contacto"
-            ></textarea>
+              class="input-contacto"></textarea>
           </div>
 
           <button type="submit" class="boton_enviar">Enviar Mensaje</button>
@@ -233,10 +268,23 @@ import GithubButton from "../components/GithubButton.astro";
             ¡Espero trabajar contigo!, no olvides contactarme.
           </h3>
           <div class="enlaces-redes">
-            <a href="#" class="enlace-red">LinkedIn</a>
-            <a href="#" class="enlace-red">GitHub</a>
-            <a href="#" class="enlace-red">Email</a>
-          </div>
+            <a
+              href="https://www.linkedin.com/in/joseph-cm-33349634b/"
+              class="enlace-red">LinkedIn</a
+            >
+            <a href="https://github.com/josephcm2006" class="enlace-red"
+              >GitHub</a
+            >
+            <div class="footer-email">
+              <span id="emailText">josephcoellom@gmail.com</span>
+              <button id="copiarEmail" class="boton-copiar" title="Copiar email">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+        </svg>
+      </button>
+            </div>
+              <p class="footer-copyright">© 2025 Joseph Coello. Todos los derechos reservados.</p>
+            </div>
         </div>
       </div>
     </div>
@@ -245,17 +293,17 @@ import GithubButton from "../components/GithubButton.astro";
 
 <script is:inline>
   // Navegación suave entre secciones
-  const navBtns = document.querySelectorAll('.nav-btn');
-  
-  navBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const sectionId = btn.getAttribute('data-section');
+  const navBtns = document.querySelectorAll(".nav-btn");
+
+  navBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const sectionId = btn.getAttribute("data-section");
       const section = document.getElementById(sectionId);
-      
+
       if (section) {
         section.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
+          behavior: "smooth",
+          block: "start",
         });
       }
     });
@@ -283,6 +331,28 @@ import GithubButton from "../components/GithubButton.astro";
       } catch (error) {
         console.error("Error:", error);
       }
+    });
+  }
+
+
+// Copiar email al portapapeles
+  const copiarEmailBtn = document.getElementById("copiarEmail");
+  const emailText = document.getElementById("emailText");
+
+  if (copiarEmailBtn && emailText) {
+    copiarEmailBtn.addEventListener("click", () => {
+      navigator.clipboard.writeText(emailText.textContent);
+    
+      // Crear mensaje de copiado
+      const mensaje = document.createElement("span");
+      mensaje.className = "mensaje-copiado";
+      mensaje.textContent = "¡Copiado!";
+      copiarEmailBtn.appendChild(mensaje);
+    
+    // Eliminar mensaje después de 2 segundos
+      setTimeout(() => {
+        mensaje.remove();
+      }, 2000);
     });
   }
 </script>
