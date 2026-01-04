@@ -42,7 +42,6 @@ import GithubButton from "../components/GithubButton.astro";
 
       <div class="contenido-inicio">
         <div class="hero-layout">
-
           <div class="foto-perfil-container">
             <img
               src="/assets/icons/fotopersonal.png"
@@ -50,7 +49,6 @@ import GithubButton from "../components/GithubButton.astro";
               class="foto-perfil"
             />
           </div>
-
 
           <div class="texto-hero">
             <h1 class="titulo_principal fade-in-animation">
@@ -120,7 +118,6 @@ import GithubButton from "../components/GithubButton.astro";
     <div id="pagina_web_proyectos">
       <h2 class="titulo_de_proyectos fade-in-animation">Mis Proyectos</h2>
       <div class="proyectos-container">
-
         <div class="proyecto-card" style="animation-delay: 0.1s;">
           <div class="proyecto-imagen">
             <img src="/assets/backgrounds/proyecto1.png" alt="Proyecto 1" />
@@ -143,7 +140,6 @@ import GithubButton from "../components/GithubButton.astro";
             </div>
           </div>
         </div>
-
 
         <div class="proyecto-card" style="animation-delay: 0.3s;">
           <div class="proyecto-imagen">
@@ -170,7 +166,6 @@ import GithubButton from "../components/GithubButton.astro";
             </div>
           </div>
         </div>
-
 
         <div class="proyecto-card" style="animation-delay: 0.5s;">
           <div class="proyecto-imagen">
@@ -205,86 +200,110 @@ import GithubButton from "../components/GithubButton.astro";
       <div class="acerca-container">
         <p class="parrafo_acerca fade-in-animation">
           Soy un estudiante de ingeniería de software que está cada vez más
-          motivado por entrar en el desarrollo web. Estudio en la Universidad
-          Laica de Eloy Alfaro de Manabí, en Ecuador, Manta. Poco a poco me
-          siento más adentrado en la industria web y todos los días trato de
-          aprender algo nuevo para usar en mis proyectos.
+          motivado por entrar en el <span class="texto_amarillo nombre-animado">
+            desarrollo web</span
+          >, actualmente estudio en la <span
+            class="texto_amarillo nombre-animado"
+          >
+            Universidad Laica de Eloy Alfaro de Manabí
+          </span> , en Ecuador, Manta. Poco a poco me siento más adentrado en la industria
+          web y todos los días trato de aprender algo nuevo para usar en mis proyectos.
         </p>
       </div>
     </div>
 
-    <div id="pagina_web_contacto">
-      <h2 class="titulo_de_proyectos contactame-animado">Contáctame</h2>
-      <div class="contacto-container">
-        <p class="parrafo_contacto">
-          ¿Tienes una idea o un proyecto en mente? Me encantaría escucharte.
-          Déjame un mensaje y te responderé lo antes posible.
-        </p>
-
-        <form
-          class="formulario-contacto"
-          id="contactForm"
-          action="https://formspree.io/f/xgoveyek"
-          method="POST"
-        >
-          <div class="grupo-formulario">
-            <input
-              type="text"
-              name="nombre"
-              placeholder="Tu nombre"
-              required
-              class="input-contacto"
-            />
+    <div id="pagina_web_experiencia">
+      <div class="timeline-container">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2025 - Actualidad</div>
+            <h3 class="timeline-title">Estudiando</h3>
+            <p class="timeline-description">
+              Actualmente me encuentro estudiando mi carrera de Ingeniería de
+              software, en busca de alguna oferta para prácticas mientras
+              aprendo más sobre el desarrollo de software.
+            </p>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-          <div class="grupo-formulario">
-            <input
-              type="email"
-              name="email"
-              placeholder="Tu correo electrónico"
-              required
-              class="input-contacto"
-            />
-          </div>
+  <div id="pagina_web_contacto">
+    <h2 class="titulo_de_proyectos contactame-animado">Contáctame</h2>
+    <div class="contacto-container">
+      <p class="parrafo_contacto">
+        Si tienes una idea, estaré atento y me gustaría saber de qúe se trata,
+        no dudes en ponerte en contacto conmigo porfavor.
+      </p>
 
-          <div class="grupo-formulario">
-            <textarea
-              name="mensaje"
-              placeholder="Tu mensaje"
-              rows="5"
-              required
-              class="input-contacto"></textarea>
-          </div>
-
-          <button type="submit" class="boton_enviar">Enviar Mensaje</button>
-        </form>
-
-        <div id="mensajeExito" class="mensaje-exito" style="display: none;">
-          <p>¡Gracias por tu mensaje! Me pondré en contacto contigo pronto.</p>
+      <form
+        class="formulario-contacto"
+        id="contactForm"
+        action="https://formspree.io/f/xgoveyek"
+        method="POST"
+      >
+        <div class="grupo-formulario">
+          <input
+            type="text"
+            name="nombre"
+            placeholder="Tu nombre"
+            required
+            class="input-contacto"
+          />
         </div>
 
-        <div class="redes-contacto">
-          <h3 class="subtitulo_contacto">
-            ¡Espero trabajar contigo!, no olvides contactarme.
-          </h3>
-          <div class="enlaces-redes">
-            <a
-              href="https://www.linkedin.com/in/joseph-cm-33349634b/"
-              class="enlace-red">LinkedIn</a
-            >
-            <a href="https://github.com/josephcm2006" class="enlace-red"
-              >GitHub</a
-            >
-            <div class="footer-email">
-              <span id="emailText">josephcoellom@gmail.com</span>
-              <button id="copiarEmail" class="boton-copiar" title="Copiar email">
+        <div class="grupo-formulario">
+          <input
+            type="email"
+            name="email"
+            placeholder="Tu correo electrónico"
+            required
+            class="input-contacto"
+          />
+        </div>
+
+        <div class="grupo-formulario">
+          <textarea
+            name="mensaje"
+            placeholder="Tu mensaje"
+            rows="5"
+            required
+            class="input-contacto"></textarea>
+        </div>
+
+        <button type="submit" class="boton_enviar">Enviar Mensaje</button>
+      </form>
+
+      <div id="mensajeExito" class="mensaje-exito" style="display: none;">
+        <p>Muchísimas gracias por contactarme, pronto veré tu mensaje :).</p>
+      </div>
+
+      <div class="redes-contacto">
+        <h3 class="subtitulo_contacto">
+          ¡Espero trabajar contigo!, no olvides contactarme.
+        </h3>
+        <div class="enlaces-redes">
+          <a
+            href="https://www.linkedin.com/in/joseph-cm-33349634b/"
+            class="enlace-red">LinkedIn</a
+          >
+          <a href="https://github.com/josephcm2006" class="enlace-red">GitHub</a
+          >
+          <div class="footer-email">
+            <span id="emailText">josephcoellom@gmail.com</span>
+            <button id="copiarEmail" class="boton-copiar" title="Copiar email">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
-        </svg>
-      </button>
-            </div>
-              <p class="footer-copyright">© 2026 Joseph Coello. Todos los derechos reservados.</p>
-            </div>
+                <path
+                  d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <p class="footer-copyright">
+            © 2026 Joseph Coello. Casi todos los derechos reservados.
+          </p>
         </div>
       </div>
     </div>
@@ -292,7 +311,6 @@ import GithubButton from "../components/GithubButton.astro";
 </Layout>
 
 <script is:inline>
-
   const navBtns = document.querySelectorAll(".nav-btn");
 
   navBtns.forEach((btn) => {
@@ -308,7 +326,6 @@ import GithubButton from "../components/GithubButton.astro";
       }
     });
   });
-
 
   const form = document.getElementById("contactForm");
   const mensajeExito = document.getElementById("mensajeExito");
@@ -334,20 +351,18 @@ import GithubButton from "../components/GithubButton.astro";
     });
   }
 
-
-
   const copiarEmailBtn = document.getElementById("copiarEmail");
   const emailText = document.getElementById("emailText");
 
   if (copiarEmailBtn && emailText) {
     copiarEmailBtn.addEventListener("click", () => {
       navigator.clipboard.writeText(emailText.textContent);
-    
+
       const mensaje = document.createElement("span");
       mensaje.className = "mensaje-copiado";
       mensaje.textContent = "¡Copiado!";
       copiarEmailBtn.appendChild(mensaje);
-    
+
       setTimeout(() => {
         mensaje.remove();
       }, 2000);
